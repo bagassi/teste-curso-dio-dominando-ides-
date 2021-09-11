@@ -4,7 +4,7 @@ import br.com.dio.model.Gato;
 
 public class PrimeiroPrograma {
     public static void main(String[] args) {
-        Gato gato = new Gato()
+        Gato gato = new Gato();
 
         System.out.println(gato);
 
@@ -21,11 +21,11 @@ public class PrimeiroPrograma {
 
 class Livro {
     private String nome;
-    private Integer num.Paginas
+    private Integer numPaginas;
 
     public Livro(String nome, Integer num) {
         this.nome = nome;
-        this.num = num;
+        this.numPaginas = num;
     }
 
     public String getNome() {
@@ -37,18 +37,18 @@ class Livro {
     }
 
     public Integer getNum() {
-        return num;
+        return numPaginas;
     }
 
     public void setNum(Integer num) {
-        this.num = num;
+        this.numPaginas = num;
     }
 
     @Override
     public String toString() {
         return "Livro{" +
                 "nome='" + nome + '\'' +
-                ", num=" + num +
+                ", num=" + numPaginas +
                 '}';
     }
 }
